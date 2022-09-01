@@ -12,11 +12,12 @@ jq("document").ready(function() {
         totalSize += this.files[i].size;
       }
     });
-   
+    
+   //compare file size
     var valid = totalSize <= 8388608;
-
+    //change file to MB
     var fileSize = totalSize / 1048576;
-
+    // round up number
     var fileSizeinMB = fileSize.toFixed(2);
 
     
